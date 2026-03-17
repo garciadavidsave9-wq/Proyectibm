@@ -1,0 +1,25 @@
+{
+  "name": "erp-system",
+  "version": "1.0.0",
+  "description": "ERP System with Node.js Backend and Vue.js Frontend",
+  "main": "api/app.js",
+  "scripts": {
+    "install-all": "npm install && cd api && npm install && cd ../Frontend && npm install && cd ..",
+    "dev": "concurrently \"cd api && npm start\" \"cd Frontend && npm run dev\"",
+    "dev:api": "cd api && npm start",
+    "dev:frontend": "cd Frontend && npm run dev",
+    "build": "cd Frontend && npm run build",
+    "start": "cd api && npm start"
+  },
+  "keywords": [
+    "erp",
+    "nodejs",
+    "vue",
+    "express"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
